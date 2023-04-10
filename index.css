@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: hsl(233, 47%, 7%);
+}
+main{
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: row ;
+    width: 1000px;
+    height: 400px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 400px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 15px 0 0 15px;
+}
+.insights{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.desktop{
+    width: 100%;
+    height: 400px;
+    opacity: 0.4;
+    border-radius:  0 15px 15px 0;
+}
+.right{
+    background-color: hsl(277, 68%, 45%);
+    width: 50%;
+    height: 400px;
+    border-radius:  0 15px 15px 0;
+}
+span{
+    color: hsl(277, 64%, 61%);
+}
+.filter { 
+    filter: sepia(100%);
+}
+h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+}
+.gray{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 480px;
+    margin-top: 5%;
+    color:hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 10%;
+    font-size: 20px;
+}
+.grey{
+    margin-top: 5%;
+    color:hsla(0, 0%, 100%, 0.75);
+}
+h2{
+    color: #ffffff;
+}
+.bot{
+    width: 480px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.companies{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* My info */
+.kudzuya{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: hsl(277, 68%, 45%);;
+    font-size: 20px;
+}
+
+.kudzuya a {
+    color: hsl(277, 68%, 45%);;
+    font-size: 20px;
+    transition: 0.5;
+}
+
+.kudzuya a:hover {
+    text-decoration: underline;
+}
+a:link {
+    text-decoration: none;
+}
+/* My info ends*/
+
+/* Desktop settings */
+@media screen and (min-width: 1001px){
+    .mobile-only{
+       display: none !important;
+    }
+ }
+
+/* mobile settings */
+@media screen and (max-width: 1000px)
+{
+    .desktop-only{
+      display: none !important;
+   }
+   body{
+    width: 100%;
+   }
+    main {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+  
+      .card{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+    .left{
+        width: 100%;
+        display: block;
+        border-radius:   0 0 15px 15px;
+    }
+    .top{
+        background-color: hsl(277, 68%, 45%);
+        border-radius:   15px 15px 0 0;
+    }
+    .insights  {
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .companies{
+        margin-bottom: 5%;
+    }
+    .bot{
+        width: 100%;
+    }
+    h1{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 34px;
+    }
+    .gray{
+        width: 90%;
+        display: block;   
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 17px;
+    }
+    .mobile{
+    width: 100%;
+    opacity: 0.4;
+    border-radius:   15px 15px 0 0;
+    }
+    .kudzuya{
+    width: 100%;
+    }
+}
